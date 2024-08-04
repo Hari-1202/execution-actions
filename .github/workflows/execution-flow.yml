@@ -95,7 +95,7 @@ jobs:
         run: echo "..."
   call-reusable:
     runs-on: ubuntu-latest
-    needs: report
+    needs: deploy
     steps:
       - name: Call reusable workflow
         uses: ./.github/workflows/reusable.yml
