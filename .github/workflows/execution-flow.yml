@@ -95,7 +95,7 @@ jobs:
         run: echo "..."
   call-reusable:
     needs: deploy
-    uses: ./.github/workflows/reusuable.yml
+    uses: ./.github/workflows/reusable.yml
     with:
       artifact-name: dist-files
   print-reusable-result:
