@@ -98,7 +98,7 @@ jobs:
     needs: deploy
     steps:
       - name: Call reusable workflow
-        uses: ./.github/workflows/reusable.yml
+        uses: ./.github/workflows/reusuable.yml
         with:
           artifact-name: dist-files
   print-reusable-result:
