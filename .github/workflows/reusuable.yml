@@ -22,4 +22,5 @@ jobs:
       - name: Deployments
         run: echo "Deploying...""
       - name: set-result
+        id: set-result
         run: echo "::set-output name=step-result::success"
