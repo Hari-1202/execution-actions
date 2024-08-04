@@ -93,3 +93,11 @@ jobs:
     steps:
       - name: Output
         run: echo "..."
+  call-reusable:
+    runs-on: ubuntu-latest
+    needs: report
+    steps:
+      - name: Call reusable workflow
+        uses: ./.github/workflows/reusable.yml
+        with:
+          artifact-name: dist-files
